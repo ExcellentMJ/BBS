@@ -1,10 +1,11 @@
 .App {
   text-align: center;
 }
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
-@import 'bootstrap/dist/css/bootstrap.min.css';
-*{
-  font-family: "Gowun Batang", serif;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -14,11 +15,13 @@
 }
 
 h1 {
-  text-align:center;
+  text-align: center;
 }
 
-.ellipsis {  overflow: hidden;  
- text-overflow: ellipsis; 
- display: -webkit-box; 
-  -webkit-line-clamp: 1;  
-  -webkit-box-orient: vertical;}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

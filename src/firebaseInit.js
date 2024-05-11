@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAcNzeEYbRdqZGMpmG-SgqOjBDOHdBdN0A",
-  authDomain: "inha-c3ee8.firebaseapp.com",
-  projectId: "inha-c3ee8",
-  storageBucket: "inha-c3ee8.appspot.com",
-  messagingSenderId: "54515918510",
-  appId: "1:54515918510:web:c618fb047df32c21812f3f"
+  apiKey: "AIzaSyDBpLqJisq228Vmq93Ns4NDTpbjt9kmBLg",
+  authDomain: "inha-1c815.firebaseapp.com",
+  projectId: "inha-1c815",
+  storageBucket: "inha-1c815.appspot.com",
+  messagingSenderId: "663055267515",
+  appId: "1:663055267515:web:4495956e58a3f2aafbdb9e",
 };
 
-// Initialize Firebase
+// Initialize Firebase 수동으로 export 해줘야함!!!!
 export const app = initializeApp(firebaseConfig);
