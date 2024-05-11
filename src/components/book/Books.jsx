@@ -33,9 +33,12 @@ const Books = () => {
         callAPI();
     }
 
-    const onClickCart = () => {
+    const onClickCart = (book) => {
         if(uid) {
             //장바구니에 도서 넣기
+            if(window.confirm(`[${book.title}]\n도서를 장바구니에 담으시겠습니까?`)){
+
+            }
         } else {
             sessionStorage.setItem('target','/books');
             navi('/login');
@@ -66,7 +69,7 @@ const Books = () => {
                             </Card.Body>
                             <Card.Footer>
                                 <div className='ellipsis'> {book.title} </div>
-                                <BsBagHeart onClick={onClickCart} style={{color:'red',fontSize:'20px',cursor:'pointer'}}/>
+                                <BsBagHeart onClick={()=>onClickCart(book)} style={{color:'red',fontSize:'20px',cursor:'pointer'}}/>
                             </Card.Footer>
                         </Card>
                     </Col>
