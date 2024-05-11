@@ -27,11 +27,16 @@ const Login = () => {
             //로그인 체크
             setLoading(true);
             signInWithEmailAndPassword(auth, email, pass)
-            .then(suceess=>{
+            .then(success=>{
                 alert('로그인 성공!');
                 setLoading(false);
                 sessionStorage.setItem('email', email);
-                navi("/");
+                sessionStorage.setItem('uid', success.user.uid);
+                if(sessionStorage.getItem('target')){
+                    navi(sessionStorage.getItem('target'));
+                }else{
+                    navi("/");
+                }
             })
             .catch(error=>{
                 alert('에러 : ' + error.message);
