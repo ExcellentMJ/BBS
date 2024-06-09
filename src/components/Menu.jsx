@@ -14,6 +14,7 @@ import Listpage from "./bbs/Listpage";
 import Insert from "./bbs/InsertPage";
 import InsertPage from "./bbs/InsertPage";
 import ReadPage from "./bbs/ReadPage";
+import UpdatePage from "./bbs/UpdatePage";
 
 const Menu = () => {
   const navi = useNavigate();
@@ -75,6 +76,7 @@ const Menu = () => {
         <Route path="/bbs" element={<Listpage />} />
         <Route path="/bbs/insert" element={<InsertPage />} />
         <Route path="/bbs/read/:id" element={<ReadPage />} />
+        <Route path="/bbs/update/:id" element={<UpdatePage />} />
       </Routes>
     </>
   );
